@@ -1,0 +1,19 @@
+{
+  "creators": [
+    {
+      "affiliation": "ANULUM",
+      "name": "Šotek, Miroslav",
+      "orcid": "0009-0009-3560-0851"
+    }
+  ],
+  "description": "Architecture-only repository validation tooling and design for deterministic semiconductor device physics and compact-model extraction: TCAD drift-diffusion studies, wafer scribe-line anchoring and Verilog-A/OSDI compact-model candidates with passivity and charge-conservation checks. No TCAD study runner, compact-model extractor, OSDI compiler wrapper or qualified record schema is released.",
+  "keywords": [
+    "TCAD simulation",
+    "compact modelling",
+    "OSDI Verilog-A",
+    "evidence provenance"
+  ],
+  "license": "AGPL-3.0-or-later",
+  "title": "Circuit Devices",
+  "upload_type": "software"
+}

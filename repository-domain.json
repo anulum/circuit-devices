@@ -1,0 +1,26 @@
+{
+  "capabilities": [],
+  "claims": [],
+  "domain_runtime_dependencies": [],
+  "evidence_maturity": "architecture_only",
+  "lifecycle": "local_scaffold",
+  "owner_group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+  "planned_owned_schema_ids": [
+    "circuit_devices.device_study.v1",
+    "circuit_devices.compact_model_candidate.v1"
+  ],
+  "qualified_owned_schema_ids": [],
+  "repository_name": "CIRCUIT-DEVICES",
+  "tooling_python": {
+    "actual_version": "3.13.16",
+    "design_baseline": "3.13",
+    "development_lock_sha256": "d609bcd213ca32627c351cd8c55ef507e887edd36a1511a4f294f2828170c6c5",
+    "supported_range": ">=3.13.16,<3.14"
+  },
+  "validation_profile": {
+    "id": "gotm.enterprise-repository-tier0.local-scaffold",
+    "profile_sha256": "f453a70eae008c41f8d26a1f495ec3636f64739bcedb9caac0bdf8774300905c",
+    "revision": "2026-10-04",
+    "standard_sha256": "8421674a61444474447fad2f4d2bfc54dc5a1ea12ae988785e57dbcab385938c"
+  }
+}
