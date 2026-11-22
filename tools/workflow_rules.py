@@ -12,7 +12,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 
-PROVENANCE_SHA256 = "304bedb02f9a10ce8bcc8ffaa32dc2f73df2e5490dcd82fca53cd8a02b76c3da"
+PROVENANCE_SHA256 = "501f71461cf02d0f4b4d4a8683a7cd01a2345f136cf6aaf6cf8b849a046131cc"
 ROLES = {
     "ci.yml": "correctness",
     "pre-commit.yml": "hook-parity",
@@ -68,7 +68,7 @@ APPROVED_OPERATIONS: dict[str, list[tuple[str, str]]] = {
     ],
     "docs.yml": [*BASE_OPERATIONS, ("run", "make docs")],
     "pre-commit.yml": [*BASE_OPERATIONS, ("run", "make native-tools"), ("run", "make hook-check")],
-    "sbom.yml": [*BASE_OPERATIONS, ("run", "make sbom")],
+    "sbom.yml": [*BASE_OPERATIONS, ("run", "make native-tools"), ("run", "make sbom")],
     "scorecard.yml": [
         ("uses", "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1"),
         (
@@ -320,7 +320,7 @@ def check_job_policy(name: str, job: object, *, aggregate: bool) -> list[Workflo
             "pre-commit.yml": {"make hook-check", "make native-tools"},
             "docs.yml": {"make docs"},
             "security-audit.yml": {"make source-audit", "make native-tools"},
-            "sbom.yml": {"make sbom"},
+            "sbom.yml": {"make sbom", "make native-tools"},
             "codeql.yml": set(),
             "scorecard.yml": set(),
         }[Path(name).name]
